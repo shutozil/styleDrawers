@@ -9,10 +9,24 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <style amp-custom>
+      p {color: white;}
+      a[href = "goo"]{background-color:pink;} /* 完全一致 */
+      a[href |= "https://www.yahoo.co.jp"]{background-color:#008000;}
+      p[data-aaa ^= "a"]{background-color:#0000FF;} /* 前方一致 */
+      p[data-bbb ^= "b"]{background-color:#000088;} /* 後方一致 */
+      a[href *= "goo"]{background-color:grey;} /* 部分一致 */
     </style>
 
   </head>
   <body>
-    <p>aaaaaa</p>
+    <p>練習〜</p>
+    <section>
+      <h1>2-6</h1>
+      <a href="https://www.google.com">google</a>
+      <a href="https://www.yahoo.co.jp">yahoo</a>
+      <a href="https://www.yahoo.co.jp/goo">yahoo goo</a>
+      <p data-aaa="apple">appleなのに青</p>
+      <p data-bbb="blob">真っ先に思いついたblob</p>
+    </section>
   </body>
 </html>
