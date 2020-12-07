@@ -21,6 +21,18 @@
       .ninohachi:nth-child(2){color: #ffccff;} /* 異なる種類の要素も含む */
       .ninohachi:last-of-type{color: #ffcc77;}
 
+      /* 2-9 */
+      .ninokyu::before {
+        content: "へろ"
+      }
+      .ninokyu_2::before {
+        content: "『";
+        color: cyan;
+      }
+      .ninokyu_2::after {
+        content: "』";
+        color: cyan;
+      }
     </style>
 
   </head>
@@ -42,7 +54,12 @@
         <p class="ninohachi">おはよう</p>
         <p class="ninohachi">こんにちは</p>
       </div>
+    </section>
 
+    <section>
+      <h1>2-9: 擬似要素</h1>
+      <p class="ninokyu">、ワールド</p>
+      <p class="ninokyu_2">なるほどね〜！</p>
     </section>
   </body>
 </html>
