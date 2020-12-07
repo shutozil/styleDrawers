@@ -18,3 +18,19 @@
 - 指定された要素の先頭にコンテンツを追加
 
 - [この記事](https://saruwakakun.com/html-css/basic/before-after#one1)がとてもわかりやすかった。
+
+## 2-14
+- list-style-position
+  - [参考](https://developer.mozilla.org/ja/docs/Web/CSS/list-style-type)
+>list-style-type: disc;
+>list-style-type: circle;
+>list-style-type: square;
+>list-style-type: decimal;
+>list-style-type: georgian;
+>list-style-type: trad-chinese-informal;
+>list-style-type: kannada;
+
+- list-style-type
+  - 点の形
+- list-style-image
+  - 点を任意の画像に変更できる
