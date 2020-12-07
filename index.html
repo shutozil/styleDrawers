@@ -9,12 +9,18 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <style amp-custom>
-      p {color: white;}
+      /* 2-6 */
       a[href = "goo"]{background-color:pink;} /* 完全一致 */
       a[href |= "https://www.yahoo.co.jp"]{background-color:#008000;}
-      p[data-aaa ^= "a"]{background-color:#0000FF;} /* 前方一致 */
-      p[data-bbb ^= "b"]{background-color:#000088;} /* 後方一致 */
+      p[data-aaa ^= "a"]{background-color:#ffbbff;} /* 前方一致 */
+      p[data-bbb ^= "b"]{background-color:#ff99ff;} /* 後方一致 */
       a[href *= "goo"]{background-color:grey;} /* 部分一致 */
+
+      /* 2-8 */
+      .ninohachi:first-child{color:#bbbbff;} /* 異なる種類の要素も含む */
+      .ninohachi:nth-child(2){color: #ffccff;} /* 異なる種類の要素も含む */
+      .ninohachi:last-of-type{color: #ffcc77;}
+
     </style>
 
   </head>
@@ -25,8 +31,18 @@
       <a href="https://www.google.com">google</a>
       <a href="https://www.yahoo.co.jp">yahoo</a>
       <a href="https://www.yahoo.co.jp/goo">yahoo goo</a>
-      <p data-aaa="apple">appleなのに青</p>
+      <p data-aaa="apple">apple・りんご</p>
       <p data-bbb="blob">真っ先に思いついたblob</p>
+    </section>
+
+    <section>
+      <h1>2-8</h1>
+      <div>
+        <h2>挨拶</h2>
+        <p class="ninohachi">おはよう</p>
+        <p class="ninohachi">こんにちは</p>
+      </div>
+
     </section>
   </body>
 </html>
