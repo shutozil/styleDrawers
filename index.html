@@ -9,53 +9,14 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
     <style amp-custom>
-      /* 2-33 */
-      @keyframes rotation {
-        0%{transform:rotate(0deg);}
-        100%{transform:rotate(180deg);}
+      /* 2-57 */
+
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid blue;
+        box-shadow: inset 5px 5px 5px 5px black;
       }
-
-      #target {
-        animation-name:rotation;
-        animation-duration:3s;
-        animation-direction:reverse;
-        /* 本来なら、アニメーションが終わった後に、画像が元の位置に戻るはずだけど、reverseによって元の位置に戻っているのでその変化が見えなくなる */
-      }
-
-      #target2 {
-        animation-name:rotation;
-        animation-duration:3s;
-      }
-
-      /* 2-43 */
-      .righttoleft {
-        direction:rtl;
-        unicode-bidi:bidi-override;
-      }
-
-      /* 2-44 */
-      .rei {font-size:60px;}
-      .oya {font-size:30px; background-color:#ccffcc;}
-      .sample1 {font-size:12px; background-color:#ffccff; vertical-align:middle;}
-      /* http://www.htmq.com/style/vertical-align.shtml */
-
-      /* 2-50 */
-      /* https://developer.mozilla.org/ja/docs/Web/CSS/float */
-        .wrap > section{
-          width:300px;
-          margin:10px 20px;
-          border:3px solid black;
-          border-radius:3px;
-          text-align:center;
-          float:left;
-        }
-
-        .clearfix::after{
-          content:"aaa";
-          display:block;
-          clear: both;
-        }
-
     </style>
 
   </head>
@@ -63,32 +24,8 @@
     <p>練習〜</p>
 
     <section>
-      <h1>2-33</h1>
-      <amp-img id="target" src="https://i.picsum.photos/id/11/400/300.jpg?hmac=jdN4m6B0VjTcGjxHhLwYUsILERHmeAhsarREzKHi15U" layout="responsive" width="200" height="200"></amp-img>
-
-    </section>
-
-    <section>
-      <h1>2-43</h1>
-      <p class="righttoleft">日本も昔は右から左に文書を書いていました。</p>
-
-    </section>
-
-    <section>
-      <h1>2-44</h1>
-      <p>これは普通に使えそう</p>
-      <div>
-        <span class="rei">例</span><span class="oya">Example.<span class="sample1">baseline</span></span>
-      </div>
-    </section>
-
-    <section>
-      <h1>2-50</h1>
-      <p>float, clear</p>
-      <div class="wrap clearfix">
-        <section>A</section>
-        <section>B</section>
-      </div>
+      <h1>2-57</h1>
+      <div class="box"></div>
     </section>
   </body>
 </html>
