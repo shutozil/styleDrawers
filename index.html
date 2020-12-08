@@ -49,6 +49,33 @@
       .skew2 img {
         transform:skewX(160deg);
       }
+
+      .cat1 {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #0000FF;
+        background-color: #2299DD;
+      }
+
+      .cat2 {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #0000FF;
+        background-color: #2299DD;
+        transform-origin:right bottom;
+        transform:rotate(90deg);
+        border-radius: 20% 0 0 0;
+      }
+
+      .cat3 {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #0000FF;
+        background-color: #2299DD;
+        /* transform-origin:right bottom; */
+        transform:rotate(10deg);
+        border-radius: 20% 0 0 0;
+      }
     </style>
 
   </head>
@@ -96,6 +123,14 @@
       <div class="img_area">
         <amp-img class="skew2" src="https://i.picsum.photos/id/11/400/300.jpg?hmac=jdN4m6B0VjTcGjxHhLwYUsILERHmeAhsarREzKHi15U" layout="responsive" width="200" height="200"></amp-img>
       </div>
+    </section>
+
+    <section>
+      <h1>2-26</h1>
+      <div class="cat1"></div>
+      <div class="cat2"></div>
+      <div class="cat3"></div>
+
     </section>
 
   </body>
