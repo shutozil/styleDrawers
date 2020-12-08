@@ -39,6 +39,22 @@
       .sample1 {font-size:12px; background-color:#ffccff; vertical-align:middle;}
       /* http://www.htmq.com/style/vertical-align.shtml */
 
+      /* 2-50 */
+      /* https://developer.mozilla.org/ja/docs/Web/CSS/float */
+        .wrap > section{
+          width:300px;
+          margin:10px 20px;
+          border:3px solid black;
+          border-radius:3px;
+          text-align:center;
+          float:left;
+        }
+
+        .clearfix::after{
+          content:"aaa";
+          display:block;
+          clear: both;
+        }
 
     </style>
 
@@ -64,7 +80,15 @@
       <div>
         <span class="rei">例</span><span class="oya">Example.<span class="sample1">baseline</span></span>
       </div>
+    </section>
 
+    <section>
+      <h1>2-50</h1>
+      <p>float, clear</p>
+      <div class="wrap clearfix">
+        <section>A</section>
+        <section>B</section>
+      </div>
     </section>
   </body>
 </html>
