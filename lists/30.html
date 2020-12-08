@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html amp lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello World</title>
+    <link rel="canonical" href="/index.html" />
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <style amp-custom>
+      /* 2-12 */
+      .img_area {
+        height: 300px;
+        width: 300px;
+        border: 2px solid grey;
+        background-color: lightcoral;
+      }
+      .clipping img {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        clip: rect(20px, 250px, 150px, 70px);
+      }
+
+      /* 2-14 */
+      .one {
+        list-style: circle;
+      }
+      .two {
+        list-style: square outside;
+      }
+
+      /* 2-22 */
+      .color1 {
+        color:hsl(180, 100%, 50%);
+      }
+      .color2 {
+        color: rgba(0, 225, 255, 0.2)
+      }
+      .color3 {
+        color: #00FF00
+      }
+
+      /* 2-25 */
+      .skew img {
+        transform:skewX(20deg);
+      }
+      .skew2 img {
+        transform:skewX(160deg);
+      }
+
+      /* 2-26 */
+      .cat1 {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #0000FF;
+        background-color: #2299DD;
+      }
+
+      .cat2 {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #0000FF;
+        background-color: #2299DD;
+        transform-origin:right bottom;
+        transform:rotate(90deg);
+        border-radius: 20% 0 0 0;
+      }
+
+      .cat3 {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #0000FF;
+        background-color: #2299DD;
+        /* transform-origin:right bottom; */
+        transform:rotate(10deg);
+        border-radius: 20% 0 0 0;
+      }
+
+      /* 2-28 */
+      caption {
+        color: #006633;
+        caption-side: bottom;
+      }
+    </style>
+
+  </head>
+  <body>
+    <p>練習〜</p>
+    <section>
+      <h1>2-12</h1>
+      <h2>普通</h2>
+      <div class="img_area">
+        <amp-img src="https://i.picsum.photos/id/11/400/300.jpg?hmac=jdN4m6B0VjTcGjxHhLwYUsILERHmeAhsarREzKHi15U" layout="responsive" width="200" height="200"></amp-img>
+      </div>
+      <h2>クリップ適用後</h2>
+      <div class="img_area">
+        <amp-img class="clipping" src="https://i.picsum.photos/id/11/400/300.jpg?hmac=jdN4m6B0VjTcGjxHhLwYUsILERHmeAhsarREzKHi15U" layout="responsive" width="200" height="200"></amp-img>
+      </div>
+    </section>
+
+    <section>
+      <h1>2-14</h1>
+      <h2>わん</h2>
+      <ul class="one">
+        <li>List Item1</li>
+        <li>List Item2</li>
+        <li>List Item3</li>
+      </ul>
+      <h2>ツー</h2>
+      <ul class="two">
+        <li>List Item A</li>
+        <li>List Item B</li>
+        <li>List Item C</li>
+      </ul>
+    </section>
+
+    <section>
+      <h1>2-22</h1>
+      <p class="color1">aaa</p>
+      <p class="color2">bbb</p>
+    </section>
+
+    <section>
+      <h1>2-25</h1>
+      <div class="img_area">
+        <amp-img class="skew" src="https://i.picsum.photos/id/11/400/300.jpg?hmac=jdN4m6B0VjTcGjxHhLwYUsILERHmeAhsarREzKHi15U" layout="responsive" width="200" height="200"></amp-img>
+      </div>
+      <div class="img_area">
+        <amp-img class="skew2" src="https://i.picsum.photos/id/11/400/300.jpg?hmac=jdN4m6B0VjTcGjxHhLwYUsILERHmeAhsarREzKHi15U" layout="responsive" width="200" height="200"></amp-img>
+      </div>
+    </section>
+
+    <section>
+      <h1>2-26</h1>
+      <div class="cat1"></div>
+      <div class="cat2"></div>
+      <div class="cat3"></div>
+
+    </section>
+
+    <section>
+      <h1>2-28</h1>
+      <table border="1">
+        <caption>表1. ｽﾀﾝﾘｰ・ｷｭｰﾌﾞﾘｯｸの作品</caption>
+        <tr><td>１９５３年</td><td>恐怖と欲望</td></tr>
+        <tr><td>１９５６年</td><td>現金に体を張れaaaaaaaaaaaaaaaaaa</td></tr>
+        <tr><td>１９５７年</td><td>突撃</td></tr>
+        <tr><td>１９６０年</td><td>スパルタカス</td></tr>
+        <tr><td>１９６２年</td><td>ロリータ</td></tr>
+        <tr><td>１９６４年</td><td>博士の異常な愛情</td></tr>
+        <tr><td>１９６８年</td><td>２００１年宇宙の旅</td></tr>
+        <tr><td>１９７１年</td><td>時計じかけのオレンジ</td></tr>
+        <tr><td>１９７５年</td><td>バリー・リンドン</td></tr>
+        <tr><td>１９８０年</td><td>シャイニング</td></tr>
+        <tr><td>１９８７年</td><td>フルメタル・ジャケット</td></tr>
+        <tr><td>１９９９年</td><td>アイズ・ワイド・シャット</td></tr>
+      </table>
+    </section>
+
+  </body>
+</html>
