@@ -17,6 +17,23 @@
         border: 1px solid blue;
         box-shadow: inset 5px 5px 5px 5px black;
       }
+
+      /* 2-58 */
+      /* https://developer.mozilla.org/ja/docs/Web/CSS/linear-gradient() */
+      .grad {
+        /* https://developer.mozilla.org/ja/docs/Web/CSS/linear-gradient() */
+        width: 400px;
+        height: 400px;
+        /* background: linear-gradient(135deg, orange, orange 60%, cyan); */
+        background: linear-gradient(45deg, blue, red, green, orange);
+      }
+      .radial-grad {
+        /* https://developer.mozilla.org/ja/docs/Web/CSS/radial-gradient() */
+        width: 400px;
+        height: 400px;
+        /* background: linear-gradient(135deg, orange, orange 60%, cyan); */
+        background: radial-gradient(blue 30%, red 50%, green 100%);
+      }
     </style>
 
   </head>
@@ -26,6 +43,12 @@
     <section>
       <h1>2-57</h1>
       <div class="box"></div>
+    </section>
+
+    <section>
+      <h1>2-58</h1>
+      <div class="grad"></div>
+      <div class="radial-grad"></div>
     </section>
   </body>
 </html>
